@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<form action='.' method='POST'>{% csrf_token %}
+
+    <h1>Вы хотите удалить книгу "{{ object.name }}"?</h1>
+    <p><input type='submit' value='Конечно' />  <a href='{% url 'books:book_all' %}'>Ни за что</a></p>
+
+</form>
+{% endblock %}

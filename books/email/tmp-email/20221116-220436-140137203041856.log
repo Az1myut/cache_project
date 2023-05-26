@@ -1,0 +1,24 @@
+Content-Type: multipart/alternative;
+ boundary="===============2140761232689479901=="
+MIME-Version: 1.0
+Subject: =?utf-8?b?0JrQvdC40LPQsCB7bmFtZX0g0LHRi9C70LAg0YPQtNCw0LvQtdC90LA=?=
+From: my_email@my.me
+To: recipient@recipient.email
+Date: Wed, 16 Nov 2022 22:04:36 -0000
+Message-ID: <166863627695.16615.11617697371563698533@alone5elvi-VirtualBox>
+
+--===============2140761232689479901==
+Content-Type: text/plain; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+
+Сообщение от сервиса Book. Удаление записи.
+--===============2140761232689479901==
+Content-Type: text/html; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+
+<h2>Здравствуйте</h2><p>Произошло удаление книги Хобби бобби.</p>
+--===============2140761232689479901==--
+
+-------------------------------------------------------------------------------

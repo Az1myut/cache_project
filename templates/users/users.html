@@ -1,0 +1,19 @@
+<!-- templates/users/login.html -->
+{% extends 'base.html' %}
+
+{% block content %}
+{% if error %}
+<p><strong>Invalid email or password.</strong></p>
+{% endif %}
+<h2>Пользователи</h2>
+
+{% for user in  users %}
+<li>
+    <a href="{% url 'user:edit' user.pk %}">{{ user.email }}</a>
+</li>
+
+{% endfor %}
+
+<hr>
+
+{% endblock content %}

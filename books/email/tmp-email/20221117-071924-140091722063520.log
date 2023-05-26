@@ -1,0 +1,24 @@
+Content-Type: multipart/alternative;
+ boundary="===============5806569200606449008=="
+MIME-Version: 1.0
+Subject: =?utf-8?b?0JrQvdC40LPQsCB7bmFtZX0g0LHRi9C70LAg0YPQtNCw0LvQtdC90LA=?=
+From: my_email@my.me
+To: recipient@recipient.email
+Date: Thu, 17 Nov 2022 07:19:24 -0000
+Message-ID: <166866956472.11543.7709680469038750641@alone5elvi-VirtualBox>
+
+--===============5806569200606449008==
+Content-Type: text/plain; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+
+Сообщение от сервиса Book. Удаление записи.
+--===============5806569200606449008==
+Content-Type: text/html; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+
+<h2>Здравствуйте</h2><p>Произошло удаление книги Преступление и наказание.</p>
+--===============5806569200606449008==--
+
+-------------------------------------------------------------------------------

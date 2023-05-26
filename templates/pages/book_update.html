@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% load cache %}
+
+{% comment %} {% cache 300 update%} {% endcomment %}
+
+{% block content %}
+        <form method="POST" enctype="multipart/form-data">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit" class="btn btn-primary">Сохранить</button>
+        </form>
+{% endblock content %}
+{% comment %} {% endcache %} {% endcomment %}

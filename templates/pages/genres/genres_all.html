@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block content %}
+        <ol>
+        {% for genre in genres %}
+        {% comment %} {{genre.pk}} {% endcomment %}
+            <li>
+                <a href="{% url 'books:books_genre_update' genre.pk %}">{{ genre.genre }}</a>
+
+                {% comment %} <button type="button">
+                    <a href="{% url 'books:book_delete' book.pk %}">Удалить</a>
+                </button> {% endcomment %}
+            </li> 
+        {% endfor %}
+        <br>
+        <button type="button">
+            <a href="{% url 'books:book_create'%}">Создать новую</a>
+        </button>
+        </ol>
+        {% if page_obj.has_previous %}
+            <a href="?page=1">&laquo; Первый</a>
+            <a href="?page={{ page_obj.previous_page_number }}">Обратно</a>
+        {% endif %}
+
+        Страница {{ page_obj.number }} из {{ page_obj.paginator.num_pages }}.
+
+        {% if page_obj.has_next %}
+            <a href="?page={{ page_obj.next_page_number }}">Туда</a>
+            <a href="?page={{ page_obj.paginator.num_pages }}">Последний &raquo;</a>
+        {% endif %}
+{% endblock content%}

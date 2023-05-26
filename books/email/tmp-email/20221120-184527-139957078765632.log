@@ -1,0 +1,24 @@
+Content-Type: multipart/alternative;
+ boundary="===============3751349234019521581=="
+MIME-Version: 1.0
+Subject: =?utf-8?b?0JrQvdC40LPQsCB7bmFtZX0g0LHRi9C70LAg0YPQtNCw0LvQtdC90LA=?=
+From: my_email@my.me
+To: recipient@recipient.email
+Date: Sun, 20 Nov 2022 18:45:27 -0000
+Message-ID: <166896992780.30707.2341575825577716186@alone5elvi-VirtualBox>
+
+--===============3751349234019521581==
+Content-Type: text/plain; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+
+Сообщение от сервиса Book. Удаление записи.
+--===============3751349234019521581==
+Content-Type: text/html; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+
+<h2>Здравствуйте</h2><p>Произошло удаление книги Хоббит2.</p>
+--===============3751349234019521581==--
+
+-------------------------------------------------------------------------------

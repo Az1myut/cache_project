@@ -1,0 +1,14 @@
+{% block mainmenu %}
+
+<nav class="navbar navbar-light" style="background-color: #e3f2fd;">
+	<div class="header">
+		<h1>{{title}}</h1>
+		<ul class="navbar-nav mr-auto">
+			{% for item_menu in menu %}
+				<li><a href="{% url item_menu.url_name %}">{{item_menu.title}}</a></li>
+			{% endfor %}
+		</ul>
+			<div class="clear"></div>
+		</div>
+	</nav>
+{% endblock mainmenu %} 

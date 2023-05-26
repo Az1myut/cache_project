@@ -1,0 +1,17 @@
+<!-- templates/users/login.html -->
+{% extends 'base.html' %}
+
+{% block content %}
+{% if error %}
+<p><strong>Invalid email or password.</strong></p>
+{% endif %}
+<h2>Log In</h2>
+<hr>
+<form method="POST" enctype="multipart/form-data">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <br>
+    <button type="submit" class="btn btn-primary">Сохранить</button>
+</form>
+{{list_object}}
+{% endblock content %}

@@ -1,0 +1,25 @@
+Content-Type: multipart/alternative;
+ boundary="===============7140018955859175276=="
+MIME-Version: 1.0
+Subject: 
+ =?utf-8?b?0KDQtdCz0LjRgdGC0YDQsNGG0LjRjyDQvdC+0LLQvtC5INC60L3QuNCz0Lg=?=
+From: my_email@my.me
+To: recipient@recipient.email
+Date: Sun, 20 Nov 2022 14:05:26 -0000
+Message-ID: <166895312664.10697.6661717601089930646@alone5elvi-VirtualBox>
+
+--===============7140018955859175276==
+Content-Type: text/plain; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+
+Сообщение от сервиса Book. Создание новой записи.
+--===============7140018955859175276==
+Content-Type: text/html; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+
+<h2>Здравствуйте</h2><p>Произошла регистрация новой книги.</p>
+--===============7140018955859175276==--
+
+-------------------------------------------------------------------------------

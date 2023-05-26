@@ -1,0 +1,24 @@
+Content-Type: multipart/alternative;
+ boundary="===============5786937149353151228=="
+MIME-Version: 1.0
+Subject: =?utf-8?b?0JrQvdC40LPQsCB7bmFtZX0g0LHRi9C70LAg0YPQtNCw0LvQtdC90LA=?=
+From: my_email@my.me
+To: recipient@recipient.email
+Date: Sat, 19 Nov 2022 20:39:10 -0000
+Message-ID: <166889035099.13737.15487369661744024598@alone5elvi-VirtualBox>
+
+--===============5786937149353151228==
+Content-Type: text/plain; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+
+Сообщение от сервиса Book. Удаление записи.
+--===============5786937149353151228==
+Content-Type: text/html; charset="utf-8"
+MIME-Version: 1.0
+Content-Transfer-Encoding: 8bit
+
+<h2>Здравствуйте</h2><p>Произошло удаление книги Трое в лодке не считая собаки.</p>
+--===============5786937149353151228==--
+
+-------------------------------------------------------------------------------
