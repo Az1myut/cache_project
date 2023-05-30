@@ -16,13 +16,17 @@ Including another URLconf
 from django.conf.urls import include
 from django.contrib import admin
 from django.urls import path
-
+from django.contrib.auth.views import LoginView, LogoutView
 from books.coockies.coockies import GetCookie, SetCookie
-
+from books.utils import MyCustomTemplateView
 urlpatterns = [
-    path('', include('books.urls'), name='books'),
+    path('registration/login', LoginView.as_view(template_name='registration/login.html'), name='login'),
+    path('registration/logout', LogoutView.as_view(), name='logout'),
     path('user/', include('users.urls'), name='user'),
     path('admin/', admin.site.urls),
     path('setcookie/', SetCookie),
     path('getcookie/', GetCookie),
+    path('my_responce/', MyCustomTemplateView.as_view(), name='my_responce'),
+    path('', include('books.urls'), name='books'),
+    
 ]

@@ -182,3 +182,8 @@ CACHES = {
 CACHE_TTL = 60 * 5
 # CACHE_TTL = 10
 AUTH_USER_MODEL = 'users.User'
+
+LOGIN_URL = 'registration/login'
+
+LOGIN_REDIRECT_URL = '/book/genres/'
+LOGOUT_REDIRECT_URL = '/book/genres/'

@@ -1,5 +1,5 @@
 from icecream import ic
-
+from  django.views.generic.base import ContextMixin, TemplateResponseMixin, View, TemplateView
 from .models import Genre
 
 menu = [{'title': "Главная", 'url_name': 'books:book_all'},
@@ -21,3 +21,11 @@ class DataMixin:
         context['genre'] = genre
 
         return context
+
+
+class MyCustomTemplateView(View,TemplateResponseMixin, ContextMixin ):
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['my_responce'] = 'MY RESPONCE'
+        return context
+    template_name = 'pages/my_responce.html'

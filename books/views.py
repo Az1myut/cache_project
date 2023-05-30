@@ -11,6 +11,7 @@ from django.views.decorators.http import condition, etag, last_modified
 from django.views.generic import (
     CreateView, DeleteView, DetailView, ListView, TemplateView, UpdateView,
 )
+from django.contrib.auth.mixins import LoginRequiredMixin
 from icecream import ic
 
 from .models import Book, Genre
@@ -47,9 +48,7 @@ class GenreBooksUpdate(SuccessMessageMixin, UpdateView):
 
 
 def latest_entry(request, pk):
-    ic(pk)
     pub_date = Book.objects.filter(pk=pk).first()
-    ic(pub_date)
     return pub_date.pub_date
 
 
@@ -77,13 +76,14 @@ class ShowBook(DataMixin, DetailView):
 # @method_decorator(cache_control(max_age=0), name='dispatch')
 
 
-class CreateBook(DataMixin, SuccessMessageMixin, CreateView):
+class CreateBook(LoginRequiredMixin,DataMixin, SuccessMessageMixin, CreateView):
     model = Book
     template_name = "pages/book_create.html"
     template_name_suffix = '_create_form'
     fields = '__all__'
     success_url = reverse_lazy('books:book_all')
     success_message = "Книга: %(name)s создана"
+    login_url = '/registration/login'
 
     def get_context_data(self, *, object_list=None, **kwargs):
         context = super().get_context_data(**kwargs)
